@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prajwal's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="A simple responsive portfolio built with HTML, CSS & JS.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Prajwal K.</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">Toggle</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <h2>Hi — I'm Prajwal</h2>
+      <p>Front-end developer building responsive, accessible web apps.</p>
+      <a class="btn" href="#projects">View projects</a>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p>I build modern web interfaces with HTML, CSS and JavaScript. This is a sample capstone portfolio demonstrating responsiveness, lazy-loading, and simple performance-minded techniques.</p>
+    </section>
+
+    <section id="projects" class="projects card">
+      <h3>Projects</h3>
+      <div id="projectsGrid" class="grid" aria-live="polite">
+        <!-- Projects loaded by JS -->
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <form id="contactForm" class="form">
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn">Send</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Prajwal K. — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
